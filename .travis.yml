@@ -1,0 +1,23 @@
+cd sudo: true
+language: cpp
+compiler: gcc
+addons: 		
+  apt: 		
+    packages: libboost-all-dev
+
+before_install: 
+  - sudo pip install codecov
+
+install: 
+  - ./install_oclint.sh
+
+
+script: 
+  - ./build.sh
+  - ./build_test.sh
+  - ./do_oclint.sh
+  - ./get_code_cov.sh
+  - codecov
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

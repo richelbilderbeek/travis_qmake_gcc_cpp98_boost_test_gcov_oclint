@@ -15,7 +15,6 @@
 
 # Fortran module files
 *.mod
-*.smod
 
 # Compiled Static libraries
 *.lai
@@ -27,3 +26,14 @@
 *.exe
 *.out
 *.app
+
+# Misc
+*.gcda
+Makefile
+*.gcov
+*.gcda
+*.gcno
+*.pro.user
+Makefile.*
+travis_qmake_gcc_cpp98_boost_test_gcov_oclint
+travis_qmake_gcc_cpp98_boost_test_gcov_oclint_test
