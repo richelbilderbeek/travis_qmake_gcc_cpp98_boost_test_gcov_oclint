@@ -16,6 +16,8 @@ script:
   - ./build.sh
   - ./build_test.sh
   - ./do_oclint.sh
+  - ./travis_qmake_gcc_cpp98_boost_test_gcov_oclint
+  - ./travis_qmake_gcc_cpp98_boost_test_gcov_oclint_test
   - ./get_code_cov.sh
   - codecov
 
